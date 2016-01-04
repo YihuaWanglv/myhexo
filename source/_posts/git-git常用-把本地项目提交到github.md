@@ -1,7 +1,7 @@
 ---
 title: '[git]git常用-把本地项目提交到github'
 date: 2015-12-31 18:04:12
-tags:
+tags: [git]
 ---
 
 ### 1.把本地项目提交到github

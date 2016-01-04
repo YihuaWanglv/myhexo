@@ -1,7 +1,7 @@
 ---
 title: 使用hexo-deploy直接发布到github
 date: 2015-12-31 17:08:52
-tags:
+tags: [hexo,deploy]
 ---
 
 本文说明如何使用hexo deploy直接提交到github发布文章。

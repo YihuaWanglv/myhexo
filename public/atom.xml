@@ -4,15 +4,31 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-12-31T09:15:59.309Z</updated>
+  <updated>2015-12-31T10:06:06.044Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name><![CDATA[John Doe]]></name>
+    <name><![CDATA[Wanglv Yihua]]></name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[[git]git常用-把本地项目提交到github]]></title>
+    <link href="http://yoursite.com/2015/12/31/git-git%E5%B8%B8%E7%94%A8-%E6%8A%8A%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%8F%90%E4%BA%A4%E5%88%B0github/"/>
+    <id>http://yoursite.com/2015/12/31/git-git常用-把本地项目提交到github/</id>
+    <published>2015-12-31T10:04:12.000Z</published>
+    <updated>2015-12-31T10:06:06.044Z</updated>
+    <content type="html"><![CDATA[<h3 id="1-_u628A_u672C_u5730_u9879_u76EE_u63D0_u4EA4_u5230github"><a href="#1-_u628A_u672C_u5730_u9879_u76EE_u63D0_u4EA4_u5230github" class="headerlink" title="1.把本地项目提交到github"></a>1.把本地项目提交到github</h3><p>touch README.md //新建说明文件<br>git init //在当前项目目录中生成本地git管理,并建立一个隐藏.git目录<br>git add . //添加当前目录中的所有文件到索引<br>git commit -m “first commit” //提交到本地源码库，并附加提交注释<br>git remote add origin <a href="https://github.com/chape/test.git" target="_blank" rel="external">https://github.com/chape/test.git</a> //添加到远程项目，别名为origin<br>git push -u origin master //把本地源码库push到github 别名为origin的远程项目中，确认提交</p>
+<h3 id="2-_u5982_u679C_u6709error_3A_failed_to_push_some_refs_to__u2018https_3A//github-com/YihuaWanglv/myhexo-git_u2018"><a href="#2-_u5982_u679C_u6709error_3A_failed_to_push_some_refs_to__u2018https_3A//github-com/YihuaWanglv/myhexo-git_u2018" class="headerlink" title="2.如果有error: failed to push some refs to ‘https://github.com/YihuaWanglv/myhexo.git‘"></a>2.如果有error: failed to push some refs to ‘<a href="https://github.com/YihuaWanglv/myhexo.git" target="_blank" rel="external">https://github.com/YihuaWanglv/myhexo.git</a>‘</h3><p>有如下几种解决方法：</p>
+<p>1.使用强制push的方法：<br>$ git push -u origin master -f<br>这样会使远程修改丢失，一般是不可取的，尤其是多人协作开发的时候。<br>2.push前先将远程repository修改pull下来<br>$ git pull origin master<br>$ git push -u origin master<br>3.若不想merge远程和本地修改，可以先创建新的分支：<br>$ git branch [name]<br>然后push<br>$ git push -u origin [name]</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="1-_u628A_u672C_u5730_u9879_u76EE_u63D0_u4EA4_u5230github"><a href="#1-_u628A_u672C_u5730_u9879_u76EE_u63D0_u4EA4_u5230github" class=]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[使用hexo-deploy直接发布到github]]></title>
